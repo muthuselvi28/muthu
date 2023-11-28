@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            background-color: rgb(188, 169, 169);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            text-align: center;
+            justify-content: center;
+            margin: 25px 25px 25px 25px;
+
+            border: 2px black solid;
+            height: 450px;
+            width: 450px;
+            margin-left: 500px;
+            background-color: white;
+        }
+
+        input {
+            padding: 5px;
+            margin: 5px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: white;
+        }
+
+        form {
+            background-color: white;
+        }
+
+        .but {
+            background-color: white;
+        }
+
+        h1 {
+
+            background-color: white;
+        }
+
+        button {
+            padding: 5px;
+            font-size: 20px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        .nav {
+            margin-left: 700px;
+        }
+
+        button {
+            padding: 5px;
+            font-size: 20px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="myform">
+            <br>
+            <br>
+            <br>
+            <h1>LOGIN</h1>
+            <br>
+            <br>
+            <input type="text" placeholder="Name or phone Number" id="name">
+            <br>
+            <br>
+            <input type="password" placeholder="Password" id="pass">
+            <br>
+            <br>
+            <div class="but">
+                <button type="button" onclick="login()" class="b3">LOGIN</button>
+            </div>
+        </form>
+    </div>
+    <div class="nav">
+        <button type="button"><a href="firstpage.html">Back</a></button>
+    </div>
+
+    <script>
+        function login() {
+            const name = document.getElementById('name').value;
+            const pass = document.getElementById('pass').value;
+
+            if ((name === "selvi" || name === "9994018056") && pass === "selvi") {
+                window.location.href = "firstpage.html"
+            }
+            else {
+                alert("Invalid please try again"
+                )
+
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
